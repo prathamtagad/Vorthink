@@ -22,7 +22,6 @@
 ### Prerequisites
 
 - Modern web browser (Chrome, Firefox, Safari, Edge)
-- AI API key (OpenAI, Claude, etc.)
 
 ### Installation
 
@@ -32,37 +31,13 @@
    cd vorthink
    ```
 
-2. **Set up your API key**
-   ```bash
-   # Create a config file
-   cp config.example.js config.js
-   # Add your API key to config.js
-   ```
-
-3. **Open in browser**
+2. **Open in browser**
    ```bash
    # Simply open index.html in your browser
    # Or use a local server
    python -m http.server 8000
    # Visit http://localhost:8000
    ```
-
-## 🛠️ Configuration
-
-### API Setup
-
-1. Get your API key from your preferred AI service provider
-2. Update the configuration file:
-
-```javascript
-// config.js
-const config = {
-    apiKey: 'your-api-key-here',
-    apiEndpoint: 'https://api.openai.com/v1/chat/completions',
-    model: 'gpt-3.5-turbo',
-    maxTokens: 150
-};
-```
 
 ### Customization
 
@@ -76,13 +51,10 @@ Vorthink is built with customization in mind:
 
 ```
 vorthink/
+├── img/                # Image assets
 ├── index.html          # Main HTML file
 ├── styles.css          # Stylesheet with custom properties
 ├── script.js           # Main JavaScript logic
-├── config.js           # Configuration file
-├── assets/
-│   ├── icons/          # Icon files
-│   └── images/         # Image assets
 ├── README.md           # Project documentation
 └── LICENSE             # License file
 ```
@@ -91,8 +63,7 @@ vorthink/
 
 1. **Start a Conversation**: Type your message in the input field
 2. **Get AI Response**: Vorthink processes your input and provides intelligent responses
-3. **Continue Chatting**: Maintain context throughout your conversation
-4. **Clear History**: Reset the conversation at any time
+3. **Clear History**: Reset the conversation by reloading
 
 ### Example Interactions
 
@@ -106,12 +77,9 @@ Vorthink: "Sure! Think of machine learning like teaching a computer..."
 
 ## 🔧 API Support
 
-Vorthink supports various AI APIs:
+Vorthink supported AI API:
 
-- ✅ OpenAI GPT Models
-- ✅ Anthropic Claude
-- ✅ Google Gemini
-- ✅ Custom API Endpoints
+- ✅ Pollinations AI
 
 ## 🎨 Customization
 
@@ -136,15 +104,7 @@ Vorthink supports various AI APIs:
 5. Push: `git push origin feature-name`
 6. Submit a pull request
 
-## 📸 Screenshots
-
-| Desktop View | Mobile View |
-|--------------|-------------|
-| ![Desktop](https://via.placeholder.com/400x300/007bff/ffffff?text=Desktop+View) | ![Mobile](https://via.placeholder.com/200x400/007bff/ffffff?text=Mobile+View) |
-
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+## Project
 
 1. Fork the project
 2. Create your feature branch
