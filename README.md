@@ -27,7 +27,7 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/vorthink.git
+   git clone https://github.com/prathamtagad/vorthink.git
    cd vorthink
    ```
 
