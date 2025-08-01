@@ -4,7 +4,7 @@
 
 **Vorthink** is a modern, web-based AI assistant that delivers intelligent conversational experiences through seamless API integration. Built with a clean interface and optimized for performance, Vorthink brings powerful AI capabilities directly to your browser.
 
-![Vorthink Demo](https://via.placeholder.com/800x400/007bff/ffffff?text=Vorthink+Demo)
+![Vorthink Demo](https://vorthink.netlify.app/)
 
 ## ✨ Features
 
