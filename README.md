@@ -144,6 +144,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **[⭐ Star this repo](https://github.com/prathamtagad/vorthink)** if you find it helpful!
 
-Made with ❤️ by [Your Name](https://github.com/prathamtagad)
+Made with ❤️ by [Pratham Tagad](https://github.com/prathamtagad)
 
 </div>
