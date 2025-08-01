@@ -1,8 +1,16 @@
+:root{
+    --First-layer: #50808E;
+    --Second-layer:#69A297;
+    --Third-layer:#84B59F;
+    --Fourth-layer:#A3C9A8;
+    --Fifth-layer:#DDD8C4;
+    --Code-layer: #446973;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: system-ui, sans-serif;
-    background-color: burlywood;
     height: 100vh;
     display: flex;
     overflow: hidden;
@@ -17,7 +25,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: white;
+    background: var(--First-layer);
     padding: 10px 20px;
 }
 
@@ -34,7 +42,7 @@ h2 {
     flex: 1;
     display: flex;
     flex-direction: column;
-    background: black;
+    background: var(--Second-layer);
     padding: 10px;
     max-height: calc(100vh - 60px);
 }
@@ -50,6 +58,7 @@ h2 {
     border-radius: 8px;
     border: none;
     font-size: 1rem;
+    background-color: var(--Third-layer);
     outline: none;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -58,16 +67,23 @@ h2 {
     flex: 1;
     margin-left: 10px;
     border: none;
+    background-color: var(--Third-layer);
     border-radius: 5px;
+    cursor: pointer;
 }
 
-/* Responsive for mobile */
 @media (max-width: 600px) {
+    .chat-area{
+        flex: 0.9 !important;
+        height: 10vh !important;
+    }
     .container {
         padding: 8px;
         height: calc(50vh-120px) !important;
     }
-
+    .copy-code{
+        display: none;
+    }
     .input-text {
         font-size: 0.9rem;
         padding: 10px 14px;
@@ -81,7 +97,7 @@ h2 {
     display: flex;
     flex-direction: column;
     width: calc(100%-20px);
-    background-color: white;
+    background-color: var(--Third-layer);
     padding: 10px;
     overflow: scroll;
     border-radius: 8px;
@@ -92,7 +108,9 @@ h2 {
     margin: 5px;
     padding: 10px;
     border-radius: 10px;
-    background: blue;
+    background: var(--Fourth-layer);
+    color: #222D30;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     animation: popup 0.7s ease-out;
 }
 
@@ -100,8 +118,10 @@ h2 {
     margin: 5px;
     padding: 10px;
     border-radius: 10px;
-    background: red;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    background: var(--Fifth-layer);
     text-align: end;
+    color: #222D30;
     animation: popup 0.7s ease-out;
 }
 
@@ -117,3 +137,22 @@ h2 {
     }
 }
 
+pre{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: var(--Code-layer);
+    box-shadow: 2px 2px 15px rgb(0,0,0,0.3);
+}
+
+.copy-code{
+    width: 90px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border-radius: 8px;
+    border: none;    
+    box-shadow: 2px 2px 5px rgb(0,0,0,0.3);
+    cursor: pointer;
+}
