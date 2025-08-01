@@ -93,6 +93,7 @@ h2 {
     padding: 10px;
     border-radius: 10px;
     background: blue;
+    animation: popup 0.7s ease-out;
 }
 
 .user-chat {
@@ -101,4 +102,18 @@ h2 {
     border-radius: 10px;
     background: red;
     text-align: end;
+    animation: popup 0.7s ease-out;
 }
+
+@keyframes popup {
+    0%{
+        transform: translate(0px,50px);;
+    }
+    50%{
+        transform: translate(0px,-10px);
+    }
+    80%{
+        transform: translate(0px,5px);
+    }
+}
+
