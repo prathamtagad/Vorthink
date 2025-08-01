@@ -87,11 +87,12 @@ Vorthink supported AI API:
 
 ```css
 :root {
-    --primary-color: #007bff;
-    --secondary-color: #6c757d;
-    --success-color: #28a745;
-    --background-color: #f8f9fa;
-    --text-color: #212529;
+    --First-layer: #50808E;
+    --Second-layer:#69A297;
+    --Third-layer:#84B59F;
+    --Fourth-layer:#A3C9A8;
+    --Fifth-layer:#DDD8C4;
+    --Code-layer: #446973;
 }
 ```
 
