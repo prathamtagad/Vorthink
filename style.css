@@ -66,10 +66,23 @@ h2 {
 .submit-btn {
     flex: 1;
     margin-left: 10px;
-    border: none;
+    font-weight: bold;
+    letter-spacing: 2px;
     background-color: var(--Third-layer);
-    border-radius: 5px;
     cursor: pointer;
+    transition: 0.7s ease;
+    border: 4px solid;
+    border-image: linear-gradient(to right, rgb(177, 254, 177), rgb(255, 222, 160)) 1;
+}
+
+.submit-btn:hover{
+    background-color: #84b59f2d;
+    border: 4px solid;
+    border-image: linear-gradient(to right, rgb(255, 222, 160), rgb(177, 254, 177)) 1;
+}
+
+.submit-btn:active{
+    transform: scale(0.85);
 }
 
 @media (max-width: 600px) {
@@ -91,6 +104,7 @@ h2 {
 }
 
 .chat-area {
+    display: flex;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     flex: 1;
     overflow: scroll;
